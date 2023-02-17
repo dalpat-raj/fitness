@@ -1,0 +1,462 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;700&display=swap');
+
+:root{
+    --text-white: #ffffff;
+    --text-orange: #fa7c30;
+    --text-dark:#6e6e71;
+
+    --bg-white:#ffffff;
+    --bg-gray:#f1f4f6;
+    --bg-dark:#161418;
+}
+
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    padding: 0;
+    margin: 0;
+    background-color: var(--bg-gray);
+
+}
+
+.container{
+    width: 100%;
+    margin: auto;
+}
+
+.container-fluid{
+    width: 80%;
+    margin: auto;
+}
+li{
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+.btn{
+    padding: 10px 20px;
+    background-color: var(--text-orange);
+    font-weight: 700;
+    color: var(--text-white);
+    border: none;
+}
+
+.col-2{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.col-3{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+/* --------  navbar --------- */
+
+.banner{
+    background:linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),url(./bg/bg-1.png)no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+
+    padding:0 10px;
+}
+
+nav .left-menu p{
+    display: inline-block;
+    color: var(--text-white);
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav .left-menu p span{
+    color: var(--text-orange);
+}
+
+nav .left-menu ul{
+    display: inline-block;
+}
+
+nav ul li{
+    display: inline-block;
+    padding: 0 10px;
+}
+
+nav ul li a{
+    color: var(--text-white);
+    font-size: 15px;
+    
+}
+
+nav .right-menu ul{
+    padding-top: 15px;
+}
+
+nav .right-menu ul li .border{
+    border: 1px solid #ffffff;
+    padding: 5px 10px;
+}
+
+.banner-text{
+    margin: 60px 70px auto auto;
+}
+
+.banner-text h2{
+    font-size: 46px;
+    font-weight: bold;
+}
+
+.banner-text h2 span{
+    color: var(--text-orange);
+}
+
+.banner-text p{
+    margin-top: -30px;
+    padding-bottom: 30px;
+    font-size: 14px;
+}
+/* --//----  navbar ---//---- */
+
+
+
+/* ------------ section-2 ---------- */
+.section-2{
+    background-color: var(--bg-gray);
+    position: relative;
+}
+
+.section-2 .col-2{
+    width: 80%;
+    background-color: var(--bg-white);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -35%);
+}
+
+.section-2 .col-2 .form-heading{
+    width: 68%;
+    align-items: center;
+}
+
+.section-2 .col-2 .box-1 img{
+    max-width: 250px;
+}
+
+.section-2 .col-2 .form-heading span{
+    text-align: center;
+}
+
+.section-2 .col-2 .form-heading span p{
+    font-size: 18px;
+    font-weight: bold;
+    margin: 15px 0;
+}
+
+.section-2 .col-2 .form-heading span h6{
+    font-size: 24px;
+    font-weight: bold;
+    margin: 10px 0;
+
+}
+
+.section-2 .col-2 .form-heading .button{
+    margin-top: 40px;
+    text-align: center;
+    width: 100%;
+}
+
+.section-2 .col-2 .box-2{
+    flex-basis: 50%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.section-2 .col-2 .box-2 .input{
+    width: 170px;
+    position: relative;
+    padding: 0 10px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    padding: 0 30px;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.section-2 .col-2 .box-2 .input p{
+    display: inline-block;
+}
+
+.section-2 .col-2 .box-2 .input::after{
+    content: '';
+    width: 170px;
+    height: 1px;
+    background-color: #000000;
+    position: absolute;
+    bottom: 0;
+}
+/* -----//----- section-2 ----//---- */
+
+
+
+
+/* ------------- section-3 -------------  */
+.section-3{
+    margin-top: 350px;
+}
+.section-3 .col-6{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.section-3 .col-6 .box-1{
+    flex-basis: 40%;
+}
+.section-3 .col-6 .box-1 h2{
+    font-size: 28px;
+}
+.section-3 .col-6 .box-1 h2>span{
+    color: var(--text-orange);
+}
+.section-3 .col-6 .box-1 p{
+    font-size: 14px;
+    font-weight: bold;
+    color: black;
+}
+.section-3 .col-6 .box-1 span.raj{
+    font-size: 14px;
+    color: black;
+    margin-top: 20px;
+    display: inline-block;
+
+}
+.section-3 .col-6 .box-1 button{
+    margin-top: 30px;
+}
+.section-3 .col-6 .box-2{
+    flex-basis: 30%;
+}
+
+.section-3 .col-6 .box-2 img{
+    width: 500px;
+}
+/* -----//------ section-3 -------//----  */
+
+
+/* ------------- section-4 ---------- */
+.section-4{
+    width: 100%;
+    padding: 40px 0;
+    background-color: var(--bg-white);
+}
+.section-4 .container-fluid h2{
+    font-size: 28px;
+}
+.section-4 .container-fluid h2 span{
+    color: var(--text-orange);
+}
+.section-4 .container-fluid p{
+    font-size: 14px;
+    padding-bottom: 10px;
+}
+.section-4 .col-3 .box-1{
+    width: 330px;
+    background-color: var(--bg-gray);
+}
+.section-4 .col-3 .box-1 img{
+    width: 100%;
+}
+.section-4 .col-3 .box-1 span{
+    display: inline-block;
+    padding: 0 20px 20px;
+}
+
+
+/* ------//------- section-4 ---//----- */
+
+
+
+/* ------------- section-5 ---------- */
+.section-5{
+    height: 70vh;
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url(./bg/bg-2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+.section-5 .sec-5-text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: var(--text-white);
+}
+.section-5 .sec-5-text p{
+    font-size: 28px;
+    margin-bottom: -30px;
+}
+.section-5 .sec-5-text h2{
+   font-size: 52px;
+   margin-bottom: 20px; 
+}
+
+/* -----//-------- section-5 ---//------- */
+
+
+/* ------------- section-6 ---------- */
+.section-6{
+    padding: 40px 0;
+    width: 100%;
+    background-color: var(--bg-gray);
+}
+.section-6 h2{
+    font-size: 28px;
+}
+.section-6 h2 span{
+    color: tomato;
+}
+.section-6 .container-fluid>p{
+    padding-bottom: 15px;
+}
+.section-6 .col-3 .box-1{
+    width: 260px;
+    text-align: center;
+}
+.section-6 .col-3 .box-1 .trainer{
+    width: 240px;
+    height: 300px;
+}
+.section-6 .col-3 .box-1 h2{
+    font-size: 24px;
+}
+.section-6 .col-3 .box-1 h6{
+    font-size: 14px;
+    color: var(--text-orange);
+    margin: -15px 0 0 0;
+}
+.section-6 .col-3 .box-1 p{
+    font-size: 14px;
+    color: var(--text-dark);
+}
+
+.section-6 .col-3 .box-1 img{
+    width: 100%;
+    height: 100%;
+}
+/* -----//------ section-6 ----//---- */
+
+
+/* ------------- section-7 ---------- */
+.section-7 .col-2 .box-1{
+    width: 50%;
+    height: 60vh;
+    background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),url(./bg/bg-3.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+}
+
+.section-7 .col-2 .box-2{
+    width: 50%;
+    height: 60vh;
+    background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),url(./bg/bg-4.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+}
+.section-7 .sec-7-text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: var(--text-white);
+}
+.section-7 .sec-7-text H2{
+    letter-spacing: 2px;
+}
+.section-7 .sec-7-text h2{
+    font-size: 28px;
+}
+
+/* -----//------ section-7 ----//---- */
+
+
+/* ------------  FOOTER ----------  */
+
+.footer{
+    background-color: var(--bg-dark);
+    color: var(--text-white);
+}
+.footer .col-3 .box{
+    width: 300px;
+}
+.footer .col-3 .box-1 h4{
+    font-size: 24px;
+}
+.footer .col-3 .box-1 h4 span{
+    color: var(--text-orange);
+}
+.footer .col-3 .box-1 p{
+    font-size: 14px;
+    line-height: 25px;
+    color: var(--text-dark);
+}
+.footer .col-3 .box-1 .icon{
+    margin: 30px 0;
+}
+.footer .col-3 .box-1 .icon span{
+    padding: 0 3px;
+}
+.footer .col-3 .box-1 .icon span .fa-twitter{
+    color: var(--text-orange);
+}
+.footer .col-3 .box-1 form span input{
+    padding: 9px 0;
+}
+
+.footer .col-3 .box-2 h6,.footer .col-3 .box-3 h6{
+    font-size: 14px;
+    font-weight: normal;
+}
+
+.footer .col-3 .box-2 .box-img span{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px 0;
+    font-size: 14px;
+    line-height: 25px;
+    color: var(--text-dark);
+}
+
+.footer .container-fluid>h4{
+    display: inline-block;
+    width: 100%;
+    font-size: 16px;
+    color: var(--text-orange);
+    text-align: center;
+}
+
+.footer .container-fluid .col-3 .box-3 p{
+    font-size: 13px;
+    cursor: pointer;
+    letter-spacing: 1px;
+}
